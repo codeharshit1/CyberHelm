@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Correct Tailwind import -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black">
+  <div class="main w-full">
+    <div class="w-full h-screen overflow-hidden">
+      <img 
+        class="absolute w-1/2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mix-blend-lighten z-10 "
+        src="https://preview.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=1080&crop=smart&auto=webp&s=0e62e74ba8b5ef6191228e855079491cfa56f57b"
+        alt="Cyberpunk Logo"
+      >
+      <canvas id="canvas" class="absolute top-0 left-0 w-full h-full"></canvas>
+    </div>
+    <div class="w-full h-screen bg-zinc-800"></div>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
